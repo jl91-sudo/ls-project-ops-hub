@@ -5,7 +5,8 @@ Claude Code keeps it current and mirrors it to a GitHub Projects board.
 claude.ai chats feed it through `inbox/`.
 
 Scope: business tracks only. Never create a track for personal projects
-(language learning, personal purchases, hobbies). If asked to, say so and stop.
+(language learning, personal purchases, hobbies), and never for other work outside Lec-Serve
+(e.g. media/editorial roles, events such as Vertiv Week, property or short-let plans). If asked to, say so and stop.
 
 ---
 
@@ -28,7 +29,6 @@ Slugs are lowercase-hyphenated. Current tracks:
 |---|---|---|
 | `lec-serve-ops` | Lec-Serve operations: compliance docs, VBA, trackers, weekly TBT sheets | Lec-Serve Project |
 | `lecserve-ai-service` | AI document-classification service for Lec-Serve clients (JEV), incl. local GPU hardware | LecServe AI Service Project |
-| `business-development` | Events, networking, prospects (e.g. Vertiv Week 2026) | Business Dev Project |
 | `ops-system` | This hub: tracking process, skills, automation | This repo |
 
 ---
@@ -205,7 +205,6 @@ A `SessionStart` hook (`.claude/settings.json` → `.ops/session_start.py`) prin
 | Slug | Health | Next action | Blocker | Last activity |
 |---|---|---|---|---|
 | `ops-system` | Active | Run setup and first weekly review | none | 2026-09-30 |
-| `business-development` | Active | Confirm Vertiv Week 2026 date and final Q&A | none | 2026-09-30 |
 | `lecserve-ai-service` | Blocked | Decide on Option B (DPA, no-retention, Tailscale, Cyber Essentials) | Needs local GPU PC (RTX 3090 24GB target) | 2026-09-25 |
 | `lec-serve-ops` | Active | Weekly TBT sheets; tracker upkeep | none | 2026-09-26 |
 
@@ -216,3 +215,4 @@ A `SessionStart` hook (`.claude/settings.json` → `.ops/session_start.py`) prin
 - 2026-09-30: completion %, dates and relevance are always asked, never estimated; task checklists; SessionStart hook; "daily" command with dashboard update.
 - 2026-09-30: daily run scheduled every day at 07:58 London with push notification. **Trial:** if most days are quiet
   (cadence check, daily step 7), switch to weekly on Mondays. Board sync skipped in cloud runs when `gh` is unavailable.
+- 2026-09-30: business-development track removed (out of scope). Backfill from past chats written to inbox/.
