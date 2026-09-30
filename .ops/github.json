@@ -1,0 +1,20 @@
+{
+  "owner": "@me",
+  "number": 1,
+  "project_id": "PVT_kwHOE0lfrc4BlNeQ",
+  "fields": {
+    "Health": {
+      "id": "PVTSSF_lAHOE0lfrc4BlNeQzhj7M8A",
+      "options": {
+        "Active": "6c09e4e7",
+        "At risk": "9b1387b7",
+        "Blocked": "9bd32eff",
+        "Paused": "48ea3cd6",
+        "Done": "25a6e6ba"
+      }
+    },
+    "Next action": { "id": "PVTF_lAHOE0lfrc4BlNeQzhj7M_o" },
+    "Blocker": { "id": "PVTF_lAHOE0lfrc4BlNeQzhj7M_s" },
+    "Last activity": { "id": "PVTF_lAHOE0lfrc4BlNeQzhj7NAs" }
+  }
+}
