@@ -216,3 +216,4 @@ A `SessionStart` hook (`.claude/settings.json` → `.ops/session_start.py`) prin
 - 2026-09-30: daily run scheduled every day at 07:58 London with push notification. **Trial:** if most days are quiet
   (cadence check, daily step 7), switch to weekly on Mondays. Board sync skipped in cloud runs when `gh` is unavailable.
 - 2026-09-30: business-development track removed (out of scope). Backfill from past chats written to inbox/.
+- 2026-10-01: first-time setup completed (SETUP.md).
