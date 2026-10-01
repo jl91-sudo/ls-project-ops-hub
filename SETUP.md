@@ -46,7 +46,7 @@ Print the block below for me to paste into claude.ai → Settings → Profile �
 It makes ordinary chats feed this repo. Don't change the wording.
 
 ```
-Always: if a chat relates to one of my business tracks (lec-serve-ops, lecserve-ai-service, business-development, ops-system), ask once at the start: "Log this to <track>? (yes/no)". If yes, at the end of the chat write an inbox checkpoint in the format from CLAUDE.md in the repo jl91-sudo/ls-project-ops-hub. If the session can push to that repo, commit it to inbox/ yourself; otherwise give me the checkpoint to save there. Never estimate completion %, due dates or which track work belongs to; ask me. Ignore personal chats.
+Always: if a chat relates to one of my business tracks (lec-serve-ops, lecserve-ai-service, ops-system), ask once at the start: "Log this to <track>? (yes/no)". If yes, at the end of the chat write an inbox checkpoint in the format from CLAUDE.md in the repo jl91-sudo/ls-project-ops-hub. If the session can push to that repo, commit it to inbox/ yourself; otherwise give me the checkpoint to save there. Never estimate completion %, due dates or which track work belongs to; ask me. Ignore personal chats.
 ```
 
 ## 7. Finish
