@@ -1,5 +1,12 @@
 # Lec-Serve operations — progress
 
+## 2026-10-02 — Backfill: Asset list QR code app and flow fixes
+- **Source:** chat:Lec-Serve Asset List QR Code Project (Project backfill)
+- **Done:** QR asset-scanning Power Apps app built with photo capture and condition reporting (Jun–Aug 2026); three Power Automate flows deployed (QR generation, Photo Upload, Report Auto-fill); 6 logic/error-handling issues identified; manual-trigger Claude analysis flow built and tested (reports → Claude → Teams); branded QR guidance (Sep 2026). Completion 10% (unchanged). 10 proposed tasks await confirmation, due dates and %s (see inbox/processed/2026-09-30-lec-serve-ops-3.md); not added to STATUS.
+- **Decisions:** Claude Opus for occasional deep-dive analysis · on-demand trigger, not scheduled · all changes go through an alpha app copy tested on phone before production · Power Automate Premium needed for HTTP actions · API billed separately from the Pro subscription.
+- **Next:** Duplicate app as alpha copy and implement first Priority 1 flow fix (Photo Upload validation order)
+- **Blocker:** none
+
 ## 2026-10-02 — Backfill: H&S digital signature app (Forms + Power Automate)
 - **Source:** chat:Lec Serve H&S Digital Signature App (Project backfill)
 - **Done:** Architecture set as Microsoft Forms + Power Automate + Excel (2026-08-21); per-section acknowledgment model scoped (MA-03 = 15 one-page talks, one ack each; newsletters ack per TOC section); bulk-send flow designed (Excel rows → Outlook email with Form link); recipient list structure defined. Completion 10% (unchanged). 6 proposed tasks await confirmation, due dates and %s (see inbox/processed/2026-09-30-lec-serve-ops-2.md); not added to STATUS.
