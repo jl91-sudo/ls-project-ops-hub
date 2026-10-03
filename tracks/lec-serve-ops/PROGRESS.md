@@ -1,5 +1,12 @@
 # Lec-Serve operations — progress
 
+## 2026-10-03 — AssetScan development reference document
+- **Source:** chat:LecServe AssetScan Development App - Claude MCP
+- **Done:** Single development reference document created for the AssetScan QR asset app (2026-10-02): screen flow and navigation map, Studio connect/deploy mechanics, SharePoint data model incl. the six SFG20 compliance column mappings, the four-flow report pipeline, UI conventions, known gotchas, audit baselines and open backlog; built from re-verified on-disk state. Completion 10% kept: the inbox reports 25% (user-confirmed in chat), but the unattended daily run does not change completion; confirm at the next checkpoint. 1 proposed task awaits confirmation (see inbox/processed/2026-10-02-lec-serve-ops-1.md); not added to STATUS.
+- **Decisions:** Reference is the standing picture of the app; the project router file keeps pointing task types at routines (only deploy rules duplicated, deliberately) · audit baselines and backlog stay authoritative in their own audit logs · Priority 1–6 flow fixes from 2026-09-30 confirmed still outstanding.
+- **Next:** Duplicate app as alpha copy and implement Priority 1 flow fix (Photo Upload: validate ReportID before creating file)
+- **Blocker:** none
+
 ## 2026-10-02 — Backfill: Asset list QR code app and flow fixes
 - **Source:** chat:Lec-Serve Asset List QR Code Project (Project backfill)
 - **Done:** QR asset-scanning Power Apps app built with photo capture and condition reporting (Jun–Aug 2026); three Power Automate flows deployed (QR generation, Photo Upload, Report Auto-fill); 6 logic/error-handling issues identified; manual-trigger Claude analysis flow built and tested (reports → Claude → Teams); branded QR guidance (Sep 2026). Completion 10% (unchanged). 10 proposed tasks await confirmation, due dates and %s (see inbox/processed/2026-09-30-lec-serve-ops-3.md); not added to STATUS.
