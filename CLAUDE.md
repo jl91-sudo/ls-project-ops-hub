@@ -165,8 +165,9 @@ Apply the At-risk rule from §3 and flag any track whose STATUS.md should change
 1. **process inbox**.
 2. For every track: apply the At-risk rule (§3) and flag tasks whose due date is today, overdue, or within 3 days.
    Health changes that follow from the rule can be written; completion % is never changed.
-3. **sync all**, only if `gh auth status` succeeds with the `project` scope. In the cloud run it usually won't:
-   skip the board and say "board sync skipped (runs at next Claude Code checkpoint)" in the summary.
+3. **sync all**, only if `gh auth status` succeeds with the `project` scope. In the cloud run it won't, and that is
+   expected (the board catches up at the next Claude Code checkpoint): skip the board silently. Do not mention it in
+   the summary or on the dashboard, and do not treat it as an error.
 4. **Update the dashboard** (only when the Claude Docs tools are available, i.e. a claude.ai cloud session):
    rewrite the Project Status Dashboard at https://claude.ai/code/artifact/54443a8c-7496-4374-ade4-9d4c72896315 so that
    *Overview* shows track count, blocked/at-risk count and "Synced <date> <time>"; *Live Projects* has one row per track
@@ -217,3 +218,4 @@ A `SessionStart` hook (`.claude/settings.json` → `.ops/session_start.py`) prin
   (cadence check, daily step 7), switch to weekly on Mondays. Board sync skipped in cloud runs when `gh` is unavailable.
 - 2026-09-30: business-development track removed (out of scope). Backfill from past chats written to inbox/.
 - 2026-10-01: first-time setup completed (SETUP.md).
+- 2026-10-06: daily run skips the board sync silently in the cloud (expected, not an error); board catches up at Claude Code checkpoints.
