@@ -1,6 +1,6 @@
 ---
 track: ops-system
-health: Active
+health: At risk
 next_action: Run setup and first weekly review
 blocker: none
 last_activity: 2026-09-30
